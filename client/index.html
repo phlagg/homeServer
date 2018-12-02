@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles.css">
     
 </head>
-<body class = "page-container">
+<body class = "title">
         
     <header>
             <h1 class="title">Michael's Righteous Home Server&trade;</h1>
@@ -17,21 +17,27 @@
     </header>
 
     <main>
-        <div class ="left">
+           
+        <!-- <div class ="left">
             <label class="switch switch_type1" role="switch" align ="center">
                 <input type="checkbox" class="switch__toggle" checked>
                 <span class="switch__label"></span>
             </label> 
 
+        </div> -->
+          
+        <div class ="u-full-width">
+                <form class = "btn-form u-full-width" id="button_click">
+            
+                        <input class="button-primary" type="button" onclick = buzzNow() id='buzz_on' value ="Buzzer On">
+                    </form>
         </div>
-           
-        <div class ="center">
+        <div class ="btn-form">
                 <form class = "btn-form" id="button_click">
             
                         <input class="button-primary" type="button" onclick = buzzNow() id='buzz_on' value ="Buzzer On">
                     </form>
         </div>
-        
 
         
               <!-- <div class="header">

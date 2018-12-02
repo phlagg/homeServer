@@ -29,7 +29,7 @@
   }
 
 
-
+/* 
 .switch{
   --uiSwitchSize: var(--switchSize, 64px);
   --uiSwitchBgColor: var(--switchBgColor, #f1f1f1);
@@ -239,7 +239,7 @@ body{
 a{
   text-decoration: none;
   color: #222;
-} */
+} */ */
 
 .page{
   min-height: 100vh;
