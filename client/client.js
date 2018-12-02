@@ -1,7 +1,7 @@
 console.log("Hello");
 const form = document.querySelector('buzz_off');
 
-var mcuSocket = new WebSocket("ws:192.168.0.10:81");
+var mcuSocket = new WebSocket("ws:192.168.0.10:443");
    
 // form.addEventListener('click', (event) => {
     
@@ -18,7 +18,7 @@ function buzzNow() {
     setTimeout(
         () => {
         buzzOff();
-          console.log('Hello after 4 seconds');
+          
         },
         500
       );
