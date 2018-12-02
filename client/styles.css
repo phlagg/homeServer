@@ -2,6 +2,31 @@
     text-align: center
 }
 
+.centerImage{
+    text-align: center;
+    display: block;
+    border-image: 10%
+}
+.btn-form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.loading {
+    text-align: center;
+}
+.left {
+    background-color:#2196F3;
+    padding:20px;
+    float:left;
+    width:25%; 
+}
+.center {
+    background-color:#f1f1f1;
+    padding:20px;
+    float:left;
+    width:60%; /* The width is 60%, by default */
+  }
 
 
 

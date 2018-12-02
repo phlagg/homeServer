@@ -4,29 +4,36 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Michael's Home Server</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" />
     <link rel="stylesheet" href="styles.css">
     
 </head>
-<body>
+<body class = "page-container">
         
     <header>
             <h1 class="title">Michael's Righteous Home Server&trade;</h1>
-                <label class="switch switch_type1" role="switch">
-                    <input type="checkbox" class="switch__toggle" checked>
-                    <span class="switch__label"></span>
-                </label>
+               
     </header>
 
     <main>
-        <form id="button_click">
-            <input type="button" onclick = buzzOn() class="button-primary" id='buzz_on' value ="Buzzer On">
-        </form>
+        <div class ="left">
+            <label class="switch switch_type1" role="switch" align ="center">
+                <input type="checkbox" class="switch__toggle" checked>
+                <span class="switch__label"></span>
+            </label> 
 
-        <form id="button_click">
-                <input type="button" onclick = buzzOff() class="button-primary" id='buzz_off' value ="Buzzer Off">
-            </form>
+        </div>
+           
+        <div class ="center">
+                <form class = "btn-form" id="button_click">
+            
+                        <input class="button-primary" type="button" onclick = buzzNow() id='buzz_on' value ="Buzzer On">
+                    </form>
+        </div>
+        
+
+        
               <!-- <div class="header">
                     <div class="page__demo">
                       <div class="main-container">

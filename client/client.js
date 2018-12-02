@@ -3,21 +3,26 @@ const form = document.querySelector('buzz_off');
 
 var mcuSocket = new WebSocket("ws:192.168.0.10:81");
    
-form.addEventListener('click', (event) => {
+// form.addEventListener('click', (event) => {
     
-    buzzNow();
+//     buzzNow();
     
-});
+// });
 
 
 
 // exampleSocket.close();
 
 function buzzNow() {
-    console.log("BUZZZZZ");
-    mcuSocket.send("#0");
-    console.log("UNBUZZZZZ");
-    mcuSocket.send("#3ff");
+    buzzOn();
+    setTimeout(
+        () => {
+        buzzOff();
+          console.log('Hello after 4 seconds');
+        },
+        500
+      );
+    
 }
 
 function buzzOn() {
