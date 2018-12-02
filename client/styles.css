@@ -212,7 +212,7 @@
 /*
 * demo page
 */
-
+/* 
 @media screen and (min-width: 768px){
 
   html{
@@ -239,7 +239,7 @@ body{
 a{
   text-decoration: none;
   color: #222;
-}
+} */
 
 .page{
   min-height: 100vh;
