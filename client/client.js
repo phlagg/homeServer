@@ -16,6 +16,8 @@ mcuSocket.onmessage = function(msgevent) {
     switch (msg) {
         case "BUZZ Received":
             console.log('in :', msg);
+            alert("Buzz Received");
+
             break;
         case "BUZZER":
             alert("You're Being Buzzed!");
