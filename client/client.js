@@ -1,4 +1,3 @@
-console.log("Hello");
 const form = document.querySelector('buzz_off');
 
 var mcuSocket = new WebSocket("ws:192.168.0.10:443");
@@ -12,26 +11,27 @@ var mcuSocket = new WebSocket("ws:192.168.0.10:443");
 
 
 // exampleSocket.close();
+mcuSocket.onmessage = function(msgevent) {
+    var msg = msgevent.data;
+    switch (msg) {
+        case "BUZZ Received":
+            console.log('in :', msg);
+            break;
+        case "BUZZER":
+            alert("You're Being Buzzed!");
+            break;
+        default:
+    
+    }
+    
+};
+
+
+
 
 function buzzNow() {
-    buzzOn();
-    setTimeout(
-        () => {
-        buzzOff();
-          
-        },
-        500
-      );
-    
+    // console.log("BUZZZZZ");
+    mcuSocket.send("B");
 }
 
-function buzzOn() {
-    console.log("BUZZZZZ");
-    mcuSocket.send("#0");
-   
-}
-function buzzOff() {
-   
-    console.log("UNBUZZZZZ");
-    mcuSocket.send("#3ff");
-}
+
