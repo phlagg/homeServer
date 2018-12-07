@@ -1,6 +1,6 @@
 const form = document.querySelector('buzz_off');
 
-var mcuSocket = new WebSocket("ws:192.168.0.10:443");
+var mcuSocket = new WebSocket("ws:phlagg.freeddns.org:443");
    
 // form.addEventListener('click', (event) => {
     
